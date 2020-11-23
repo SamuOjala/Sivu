@@ -1,0 +1,108 @@
+
+
+
+
+
+
+#Otsikko {
+  background-color:#062a4d;
+  font-family:verdana;
+  text-align:center;
+  color:#6d8bcc;
+  padding:5px;
+}
+
+.portbody{
+  background-color:#6d8bcc;
+  font-family:fantasy;
+  font-size:16px;
+}
+.navi{
+  position:sticky;
+  float:right;
+  background-color:#000000;
+  text-decoration:none;
+  color:#ffffff;
+  text-decoration-color:#ffffff;
+  padding:10px;
+}
+.navi:hover{
+  color:#ff0000;
+}
+.navi:active{
+  color:#ffffff;
+}
+#navi a, #ivan a{
+  text-decoration:none;
+  color:#ffffff;
+  border-bottom: 1px dashed #ffffff;
+  }
+.table, td, tr, th{
+  border-style:groove;
+  border:3px solid #000000;
+  background-color:#bfc0db;
+  padding:10px;
+  border-radius:20px;
+  margin-left:33%;
+  margin-right:33%;
+  margin-bottom:5%;
+  width:28%;
+}
+.lista, #lista {
+  background-image: url("tausta.jpg");
+  background-repeat:no-repeat;
+  height:500px;
+  background-position:center;
+  background-size:100% 100%;
+  color:#ffffff;
+  font-size:24px;
+  text-align:center;
+  font-family:monospace;
+}
+.pics, #pics{
+  margin-top:15%;
+  margin-bottom:1%;
+}
+.otabody{
+  background-color:#ffed9c;
+}
+.pakko, #okkap, .pakko label, #okkap label, .pakko h4, #okkap h4, .pakko input, #okkap input{
+width:70%;
+margin-left:15%;
+margin-right:15%;
+background-color:#b45b07;
+color:#ffffff;
+padding:10px;
+margin-bottom:25px;
+}
+.pakko, #okkap, .pakko textarea, #okkap textarea{
+  border:10px double #000000;
+}
+.laatikot{
+  margin-top:5%;
+  border-top: 15px double #000000;
+}
+#boksi{
+margin-top:1%;
+float:left;
+width:20%;
+border:2px solid #000000;
+padding:10px;
+box-sizing:content-box;
+height:20%;
+}
+.link a{
+  text-decoration:none;
+  color:#000000;
+}
+.Asetukset{
+  border-radius:5px;
+}
+.Asetukset li{
+  list-style:none;
+}
+#virhetila{
+  text-align:center;
+  color:#fd9636;
+  font-family:Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+}
