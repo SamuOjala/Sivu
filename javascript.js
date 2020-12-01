@@ -67,13 +67,12 @@ asetuksetLogo.addEventListener('click', e =>{
   asetukset.style.border = '5px double black';
 });*/
 
-const nappula = document.querySelector('#nappula');
+
 const etuSisalto = document.querySelector('#etu');
 const sukuSisalto = document.querySelector('#suku');
 const sahkoSisalto = document.querySelector('#sahko')
 const virheilmo = document.querySelector('#virhetila');
-
-
+const nappula = document.querySelector('#nappula')
 nappula.addEventListener('click', e =>{
   e.preventDefault();
 
