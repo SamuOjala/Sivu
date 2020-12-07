@@ -3,9 +3,11 @@ const nimi = document.querySelector('#nimi');
 const email = document.querySelector('#email');
 const viesti = document.querySelector('#viesti');
 const emailnappi = document.querySelector('.lahetanappi');
+const virheteksti = document.querySelector('#virheteksti');
 emailnappi.addEventListener('click', e => {
   e.preventDefault();
   sendJSON();
+  virhetapahtuma();
 });
 
 function sendJSON(){
@@ -27,10 +29,17 @@ var data = JSON.stringify({
   "EmailName": nimi /*Nimi-kentän sisältö*/
 });
 
-}if(viesti.value ===''|| email.value ===''||nimi.value ===''){
+};
+
+function virhetapahtuma(){
+if(viesti.value ===''|| email.value ===''||nimi.value ===''){
 virhe.style.background='#ff0000';
 virhe.style.border= 'solid 2px black';
+virheteksti.innerHTML=('!!!!     Täytä kaikki kentät, Kiitos.     !!!!')
 
 }else{
   xhr.send(data);
+  emailnappi.disabled = true;
+  seTimeOut(function(){emailnappi.disabled = false;},55555000)
 }
+};

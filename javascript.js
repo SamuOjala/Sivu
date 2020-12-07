@@ -55,18 +55,22 @@ const perheAla = perhe.filter(function(perhe){
 });
 
 console.log('Perheeni jäsenten ikien summa on: '+ iat(11, 14, 16, 40, 40 ));
-/*
+
 const asetuksetLogo = document.querySelector('#AsetusLogo');
 const asetukset = document.querySelector('.Asetukset');
 const asetusOtsikko = document.querySelector('#asetusotsikko');
 
 asetuksetLogo.addEventListener('click', e =>{
-  asetukset.classList.add('asetukset');
-  asetukset.innerHTML('<h1>Asetuksia teemojen vaihtamiseen.</h1>')
-  asetukset.style.background = 'White';
-  asetukset.style.border = '5px double black';
-});*/
-
+  asetuksetTapahtuma();
+});
+function asetuksetTapahtuma() {
+  var x = asetukset;
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+};
 
 const etuSisalto = document.querySelector('#etu');
 const sukuSisalto = document.querySelector('#suku');
