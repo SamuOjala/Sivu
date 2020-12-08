@@ -32,6 +32,6 @@ getJSON('https://api.apify.com/v2/key-value-stores/jEFt5tgCTMfjJpLD3/records/LAT
     p3.innerHTML = ('Tartutettuja: ' + tartunnat);
     p4.innerHTML = ('Kuolleita: ' + kuolleet);
     p5.innerHTML = ('<a href="https://api.apify.com/v2/datasets/BDEAOLx0DzEW91s5L/items?format=json&clean=1">Historiaa</a>');
-    p6.innerHTML = ('<a href="taulukko.html">Taulukko marraskuun luvuista.</a>');
+    p6.innerHTML = ('<a href="taulukko.html">Taulukko vanhoista luvuista.</a>');
   }
 });
