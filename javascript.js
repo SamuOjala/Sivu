@@ -91,9 +91,7 @@ nappiYhteys.addEventListener('click', e =>{
   }else{
 
     const li = document.createElement('li');
-
-    li.appendChild(document.createTextNode(`Kiitos!`));
-    virheilmo.appendChild(li);
+    
 
     etuSisalto.value = '';
     sukuSisalto.value= '';

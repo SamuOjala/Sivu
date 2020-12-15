@@ -36,12 +36,11 @@ if(viesti.value ===''|| email.value ===''||nimi.value ===''){
 virhe.style.background='#ff0000';
 virhe.style.border= 'solid 2px black';
 virheteksti.innerHTML=('!!!!     Täytä kaikki kentät, Kiitos.     !!!!')
-setTimeOut(()){virhe.style.background}
-
+setTimeOut(function(){virhe.style.background = 'white'},555550);
 }else{
   xhr.send(data);
   emailnappi.disabled = true;
-  seTimeOut(function(){emailnappi.disabled = false;},55555000);
-console.log('Meni.');
+  setTimeOut(function(){emailnappi.disabled = false;},55555000);
+  virheteksti.innerHTML = 'Kiitos!';
 }
 };
